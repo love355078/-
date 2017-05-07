@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        .full-width {
+            width: 100%;
+        }
+        .fixed-width {
+            width: 1000px;
+            margin: auto;
+        }
+        .col-1 {
+            width: 980px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+        .col-2 {
+            width: 480px;
+            margin-left: 10px;
+            margin-right: 10px;
+            float: left;
+        }
+        .col-3 {
+            width: calc(1000px/3 - 20px);
+            margin-left: 10px;
+            margin-right: 10px;
+            float: left;
+        }
+        #blog .fixed-width{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="full-width" id="blog">
+        <div class="fixed-width">
+            <div class="col-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis tempora explicabo sapiente non, eligendi doloribus voluptatem nostrum, aut repudiandae consequuntur reprehenderit nulla, culpa labore atque. Dolorum rem a laudantium. Nam.</div>
+        </div>
+    </div>
+    <div class="full-width">
+        <div class="fixed-width">
+            <div class="col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cupiditate, voluptate distinctio nesciunt, officia modi laboriosam recusandae ullam nobis quo quisquam, ipsa aperiam. Itaque voluptate facere omnis adipisci esse maiores?</div>
+            <div class="col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia quas itaque exercitationem laudantium iure labore doloremque quae. Deleniti, perferendis, labore nulla totam modi, dolore saepe quod sint cum possimus itaque?</div>
+            <div class="col-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde ipsa sunt accusamus ut, alias repellat molestias eum perspiciatis architecto laudantium non vero numquam, in tenetur necessitatibus aut reiciendis odit maiores!</div>
+        </div>
+    </div>
+    <div class="full-width">
+        <div class="fixed-width">
+            <div class="col-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo nihil alias repellendus, consequatur delectus eveniet ut laudantium suscipit reiciendis sapiente eius natus, repellat pariatur maxime cum, vitae sint assumenda nulla.</div>
+        </div>
+    </div>
+    <div class="full-width">
+        <div class="fixed-width">
+            <div class="col-2">Lorem</div>
+            <div class="col-2">Lorem</div>
+        </div>
+    </div>
+</body>
+</html>

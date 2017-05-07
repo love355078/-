@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        .clearfix::after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .container {
+            width: 1200px;
+            margin: auto;
+            background-color: coral;
+/*            height: 300px;*/
+/*            overflow: auto;*/
+        }
+        .box {
+            width: 380px;
+            background-color: #ff0825;
+            float: left;
+            margin: 10px;
+            padding: 10px;
+        }
+        h2:hover {
+            color: #ffeb00;
+            background-color: #0812ff;
+        }
+        h2::after {
+            content: "我是虛擬元素(後面)";
+        }
+        h2::before {
+            content: "我是虛擬元素(前面)";
+        }
+    </style>
+</head>
+<body>
+      <div class="container clearfix">
+       <div class="box">
+          <h2>
+              asdfsdfa
+          </h2>
+           <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque quibusdam, odio qui debitis ad ab porro voluptates est laboriosam suscipit temporibus rem, quasi, eveniet illum labore quo nam? Quod!
+           </p>
+       </div>
+       <div class="box">
+           <h2>
+              asdfsdfa
+          </h2>
+           <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque quibusdam, odio qui debitis ad ab porro voluptates est laboriosam suscipit temporibus rem, quasi, eveniet illum labore quo nam? Quod!
+           </p>
+       </div>
+       <div class="box">
+           <h2>
+              asdfsdfa
+          </h2>
+           <p>
+               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur doloremque quibusdam, odio qui debitis ad ab porro voluptates est laboriosam suscipit temporibus rem, quasi, eveniet illum labore quo nam? Quod!
+           </p>
+       </div>
+    </div>
+</body>
+</html>
